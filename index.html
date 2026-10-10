@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MAX'N'ASH | MaxAndAsh.com</title>
+<link rel="icon" type="image/jpeg" href="assets/maxash-logo.jpg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-<a class="brand" href="#home"><b>MAX</b><span>'N'</span><strong>ASH</strong></a>
+<a class="brand brand-logo" href="#home" aria-label="MAX'N'ASH home"><img src="assets/maxash-logo.jpg" alt="MAX'N'ASH logo with Max in red and Ash in blue"><span class="brand-tagline">Gaming • Music • Friends ❤️</span></a>
 <nav><a href="#gaming">Gaming</a><a href="#music">Music</a><a href="#animation">Animation</a><a href="#talk">Talk to Us</a></nav>
 <a class="youtube" href="https://youtube.com/@maxandash-tru?si=MqxNtMh4ffUAFq5K" target="_blank"><i>▶</i> YouTube</a>
 </header>
@@ -19,7 +20,7 @@
 <small>MAXANDASH.COM</small>
 <h1><b>MAX</b><span>'N'</span><strong>ASH</strong></h1>
 <h2>GAMING • MUSIC • ANIMATION • STORIES</h2>
-<p>Welcome to the official home of Max & Ash.</p>
+<p class="welcome-copy">Hey, welcome in! 👋 We’re Max & Ash. Grab a seat, enjoy our music, and explore our little corner of the gaming world. 💙❤️</p>
 <div class="buttons">
 <a class="btn white" href="https://youtube.com/@maxandash-tru?si=MqxNtMh4ffUAFq5K" target="_blank"><i>▶</i> WATCH ON YOUTUBE</a>
 <a class="btn dark" href="#gaming">EXPLORE OUR WORLD ↓</a>
@@ -60,10 +61,16 @@
 <form id="messageForm" action="https://formsubmit.co/pridebros4life@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New message from MAX'N'ASH website">
 <input type="hidden" name="_template" value="table">
-<input name="name" id="name" maxlength="40" placeholder="Your name / nickname" required>
-<textarea name="message" id="message" maxlength="600" rows="6" placeholder="Your message..." required></textarea>
-<button class="btn white" type="submit">SEND MESSAGE</button>
-<p class="form-help">Messages are sent to the MAX'N'ASH inbox. Please do not include private information.</p>
+<input type="hidden" name="_captcha" value="false">
+<label class="field-label" for="name">Your name or nickname</label>
+<input name="name" id="name" maxlength="40" autocomplete="nickname" placeholder="e.g. Alex or your gaming name" required>
+<label class="field-label" for="email">Your email (optional)</label>
+<input name="email" id="email" type="email" maxlength="100" autocomplete="email" placeholder="Only if you’d like us to reply">
+<label class="field-label" for="message">Your message</label>
+<textarea name="message" id="message" maxlength="1000" rows="6" placeholder="Write your message here..." required></textarea>
+<button class="btn white" id="sendMessageBtn" type="submit">💌 SEND MESSAGE</button>
+<p id="status" class="form-help" role="status" aria-live="polite">Messages go to pridebros4life@gmail.com.</p>
+<p id="emailFallback" class="email-fallback" hidden></p>
 </form></div>
 </section>
 
