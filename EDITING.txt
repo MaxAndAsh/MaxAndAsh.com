@@ -1,0 +1,20 @@
+MAX'N'ASH WEBSITE
+
+Files:
+- index.html = page content and links
+- style.css = colors, layout, fonts and visual design
+- script.js = buttons, year and small interactions
+
+Official YouTube channel:
+https://youtube.com/@maxandash-tru?si=MqxNtMh4ffUAFq5K
+
+FREE PUBLISHING:
+Upload these files to a public GitHub repository and enable GitHub Pages from Settings > Pages > Deploy from a branch > main > /(root).
+
+The site is static, so it works in modern Chrome, Firefox, Edge, Safari and other standards-compliant browsers.
+
+CUSTOM DOMAIN:
+MaxAndAsh.com can be connected later through your hosting provider. The domain itself is not included with free hosting.
+
+CONTACT FORM:
+The current form is a front-end demo and does not send email. Add a form backend later if you want real messages.
